@@ -32,7 +32,7 @@ const ProcessSimple = ({ item, index }) => [
 					d={`
 						M${index * 300 + 100} 100
 						V${100 + index * 25}
-						H${c.linkTo * 300 + 75}
+						H${(c.linkTo - 1) * 300 + 75}
 						V${100}
 						
 					`}
