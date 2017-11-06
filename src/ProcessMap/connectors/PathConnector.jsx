@@ -9,9 +9,9 @@ const PathConnector = ({ connector: { linkTo, linkFrom, isTwoWay, isDotted } }) 
       H${linkTo * 300 + 75}
       V${100}
     `}
-    marker-end="url(#arrow-end)"
-    marker-start={isTwoWay ? 'url(#arrow-start)' : null}
-    stroke-dasharray={isDotted ? '5, 5' : null}
+    markerEnd="url(#arrow-end)"
+    markerStart={isTwoWay ? 'url(#arrow-start)' : null}
+    strokeDasharray={isDotted ? '5, 5' : null}
   />
 );
 

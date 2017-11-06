@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ProcessMap from './ProcessMap/ProcessMap';
 import data from './data.json';
 import logo from './logo.svg';
+import transformItems from './ProcessMap/utils/transformItems';
 import './App.css';
 
 class App extends Component {
@@ -15,7 +16,7 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <ProcessMap items={data.items} />
+        <ProcessMap items={transformItems(data.items)} />
       </div>
     );
   }
