@@ -4,13 +4,13 @@
       "title": "Buyer receives payment notification",
       "id": 1,
       "description": "",
-      "type": "start",
+      "type": "process-simple",
       "stream": 1,
       "attachment": "http://upload1.location",
       "connectors": {
         "1": {
           "title": "",
-          "type": "simple",
+          "type": "simple-two-way",
           "linkTo": 2
         }
       }
@@ -45,7 +45,7 @@
         },
         "2": {
           "title": "Connector 4 Name",
-          "type": "simple",
+          "type": "dotted",
           "linkTo": 5
         }
       }
@@ -60,7 +60,7 @@
       "connectors": {
         "1": {
           "title": "",
-          "type": "simple",
+          "type": "dotted-two-way",
           "linkTo": 6
         }
       }
@@ -69,7 +69,7 @@
       "title": "Email buyer ask for full payment",
       "id": 4,
       "description": "",
-      "type": "process-simple",
+      "type": "start",
       "stream": 1,
       "attachment": "http://upload1.location",
       "connectors": {
